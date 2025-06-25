@@ -501,6 +501,52 @@ body.nature-on .nature-section {
   animation: blink 1s infinite;
 }
 
+/* Project Card Styling */
+.project-card {
+  background: #1e3a5f;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  background: #27496d;
+}
+
+/* Image Zoom Effect */
+.project-card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Style */
+.project-card .btn {
+  border: 1px solid #ccc;
+  color: #fff;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #fff;
+  color: #1e3a5f;
+}
+
+
 @keyframes blink {
   0% {
     opacity: 1
